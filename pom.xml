@@ -27,7 +27,23 @@
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
-    </dependencies>
+    </dependencies> <plugin>
+        <groupId>com.demo</groupId>
+             <artifactId>dockerfile-maven-plugin</artifactId>
+             <version>1.4.3</version>
+             <executions>
+                 <execution>
+                     <id>default</id>
+                     <goals>
+                         <goal>build</goal>
+                     </goals>
+                 </execution>
+             </executions>
+             <configuration>
+             <repository>docker.io/kkapelon/docker-maven-comparison</repository>
+                 <tag>${project.version}</tag>
+             </configuration>
+         </plugin>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
