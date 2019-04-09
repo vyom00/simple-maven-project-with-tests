@@ -27,7 +27,8 @@
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
-    </dependencies> <plugin>
+    </dependencies> 
+    <plugin>
         <groupId>com.demo</groupId>
              <artifactId>dockerfile-maven-plugin</artifactId>
              <version>1.4.3</version>
