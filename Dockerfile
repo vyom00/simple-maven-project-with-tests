@@ -13,3 +13,5 @@ ADD . /app
 
 EXPOSE 8080
 
+CMD java -jar target/hello-dropwizard-1.0-SNAPSHOT.jar server example.yaml
+
