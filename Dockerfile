@@ -5,7 +5,7 @@ FROM tomcat
 
 #RUN apt-get install default-jre -y
 
-CMD mkdir /app
+#CMD mkdir /app
 
 WORKDIR /app/
 
